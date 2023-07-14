@@ -23,8 +23,9 @@ export const FakePostContextProvider = ({children}) => {
     const [posts, setPosts] = useState([{
         id: 0,
         author: 'Jhopla',
-        content: `Contenido de un post normal, más o menos largo para testear como se vería,
-                  esto sigue siendo parte del texto de prueba, ola jaja salu2`,
+        content: `Inserted post, right into posts' state, this is how you'll
+                  see every post added here in this page. I hope you find this
+                  nice c: saludos!`,
         date: getDate()
     }]);
 
