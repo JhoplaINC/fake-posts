@@ -11,6 +11,7 @@ export const Explanation = () => {
                         This was developed just for showing you the useState, useEffect and useContext
                         React hooks common usage.
                     </p>
+                    <sub className="site-aclaration">Once you refresh this page, all added posts wil be deleted.</sub>
                 </div>
             </div>
         </>
