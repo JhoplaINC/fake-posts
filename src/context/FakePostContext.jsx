@@ -11,11 +11,27 @@ export const useFakePostContext = () => {
 }
 
 export const FakePostContextProvider = ({children}) => {
-    const [posts, setPosts] = useState([]);
+
+    const getDate = () => {
+        let day = new Date().getDate();
+        let month = new Date().getUTCMonth() + 1;
+        let year = new Date().getUTCFullYear();
+
+        return day + '/' + month + '/' + year;
+    }
+
+    const [posts, setPosts] = useState([{
+        id: 0,
+        author: 'Jhopla',
+        content: `Contenido de un post normal, más o menos largo para testear como se vería,
+                  esto sigue siendo parte del texto de prueba, ola jaja salu2`,
+        date: getDate()
+    }]);
+
 	const [postCounter, setPostCounter] = useState(0);
 
     const createPost = (data) => {
-        setPosts([...posts, data]);
+        setPosts([data, ...posts]);
         setPostCounter((prevKey) => prevKey + 1);
     }
 
@@ -23,7 +39,8 @@ export const FakePostContextProvider = ({children}) => {
         <FakePostContext.Provider value={{
             posts,
             createPost,
-            postCounter
+            postCounter,
+            getDate
         }}>
             {children}
         </FakePostContext.Provider>

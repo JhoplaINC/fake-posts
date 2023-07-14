@@ -6,7 +6,7 @@ export const CreatePost = () => {
 
     const { createPost } = useFakePostContext();
 
-    const [postId, setPostId] = useState(0);
+    const [postId, setPostId] = useState(1);
 
     const getDate = () => {
         let day = new Date().getDate();
