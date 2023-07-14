@@ -1,0 +1,116 @@
+@media screen and (max-width: 768px) {
+    
+}
+
+@media screen and (max-width: 480px) {
+    // EXPLANATION STYLE
+    .explanation-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        .site-title {
+            margin: 0;
+            width: 100%;
+        }
+
+        .explanation-info {
+            border-top: 3px dotted #E65C4F;
+            border-left: none;
+            height: auto;
+            margin: 0;
+            width: 89.5%;
+
+            p {
+                font-size: 14px;
+                text-align: justify;
+            }
+        }
+    }
+
+    // CREATE POST STYLE
+    .form-container {
+        margin-top: 119px;
+
+        form {
+            padding: 20px 0;
+            width: 90%;
+
+            .input-container {
+
+                button {
+                    width: 80%;
+                }
+            }
+        }
+    }
+
+    // POST STYLE
+    .post {
+        padding: 5px 15px;
+        width: 80%;
+
+        .post-header {
+            flex-wrap: wrap;
+
+
+            .post-author {
+                width: 85%;
+
+                p  {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .post-date {
+                width: 100%;
+
+                p {
+                    font-size: 14px;
+                    margin: 0 0 10px;
+                    padding: 0 5px;
+                }
+            }
+        }
+    }
+
+    // FOOTER STYLE
+    footer {
+        flex-direction: column;
+
+        .footer-left-side {
+            margin-bottom: 20px;
+            width: 100%;
+
+            .footer-title {
+                font-size: 16px;
+            }
+
+            .rrss-section {
+
+                a {
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .footer-right-side {
+            width: 100%;
+
+            .footer-title {
+                font-size: 16px;
+            }
+
+            .rrss-section {
+
+                .rrss-container {
+
+                    a {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
