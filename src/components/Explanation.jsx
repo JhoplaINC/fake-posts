@@ -8,8 +8,8 @@ export const Explanation = () => {
                     <p className="site-description">
                         Fake Posts is an app where you can create, like its name says,
                         Fake Posts. <br />
-                        This was developed just for showing you the useState and useContext
-                        React hooks functionality.
+                        This was developed just for showing you the useState, useEffect and useContext
+                        React hooks common usage.
                     </p>
                 </div>
             </div>
